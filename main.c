@@ -1,11 +1,13 @@
 #include <SDL2/SDL.h>
 #include <float.h>
 
+// 定义三维
 typedef struct
 {
     float x, y, z;
 }
 Vertex;
+//顶点 （描述顶点所需要的元素）
 
 typedef struct
 {
@@ -14,12 +16,14 @@ typedef struct
     int max;
 }
 Vertices;
+// 顶点 ，点点的数目以及限制
 
 typedef struct
 {
     int va, vb, vc, ta, tb, tc, na, nb, nc;
 }
 Face;
+// v t n 9个点来描述脸部
 
 typedef struct
 {
@@ -28,6 +32,7 @@ typedef struct
     int max;
 }
 Faces;
+// 脸德尔数目以及限制
 
 typedef struct
 {
@@ -35,12 +40,14 @@ typedef struct
     Faces fs;
 }
 Obj;
+// 脸部以及顶点的关系
 
 typedef struct
 {
     Vertex a, b, c;
 }
 Triangle;
+// 三角形
 
 typedef struct
 {

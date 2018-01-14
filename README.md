@@ -20,11 +20,13 @@ Hit END to close the window.
 这里面需要先安装SDL2 ，
 安装如下(通过源码安装)；
 下载地址：https://www.libsdl.org/download-2.0.php
-1、解压
-2、配置以及安装 （在终端上执行下面命令，当然是在这个源代码的目录下）
-./configure
-make
-sudo make install
+1、解压 <br>
+2、配置以及安装 （在终端上执行下面命令，当然是在这个源代码的目录下）<br>
+./configure <br>
+make  <br>
+sudo make install <br>
+
+上面代码是VC上面写的应该会有更多的提示
 
 
 
