@@ -62,6 +62,7 @@ typedef struct
     SDL_Surface* fdif;
 }
 Target;
+// 目标
 
 typedef struct
 {
@@ -72,6 +73,7 @@ typedef struct
     int yres;
 }
 Sdl;
+// sdl需要渲染的属性 （一个窗口，一个着色器，一个画布， xy轴上面的资源）
 
 typedef struct
 {
@@ -81,6 +83,7 @@ typedef struct
     const uint8_t* key;
 }
 Input;
+// 输入接口
 
 static int flns(FILE* const file)
 {
@@ -98,6 +101,7 @@ static int flns(FILE* const file)
     rewind(file);
     return lines;
 }
+// 文件的链接
 
 static char* freadln(FILE* const file)
 {
@@ -114,6 +118,7 @@ static char* freadln(FILE* const file)
     line[reads] = '\0';
     return line;
 }
+// 文件通过链接来读取文件内容
 
 static Vertices vsnew(const int max)
 {
@@ -480,6 +485,8 @@ static SDL_Surface* sload(const char* const path)
     SDL_FreeSurface(bmp);
     return converted;
 }
+
+// 主函数显示实现的过程
 
 int main()
 {
